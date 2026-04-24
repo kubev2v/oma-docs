@@ -1,0 +1,6 @@
+:_mod-docs-content-type: CONCEPT
+[id="oma-introduction"]
+= {OMA}
+
+[role="_abstract"]
+pass:[]

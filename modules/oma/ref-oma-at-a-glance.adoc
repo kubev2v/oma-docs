@@ -1,0 +1,6 @@
+:_mod-docs-content-type: REFERENCE
+[id="oma-at-a-glance"]
+= {OMA} at a glance
+
+[role="_abstract"]
+pass:[]

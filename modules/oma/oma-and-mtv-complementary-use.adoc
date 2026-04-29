@@ -1,0 +1,12 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="oma-and-mtv-complementary-use"]
+= How {OMA} relates to {MTV} in a migration program
+
+[role="_abstract"]
+{OMA} and {MTV} have different jobs in a typical program that moves virtual machines from VMware to {OSV}. {OMA} is for a pre-migration assessment and planning view of the estate. {MTV} is the {RH} product line for executing the migration and managing the movement of virtual machines after you have a design and a target cluster that your organization has approved.
+
+* Use {OMA} when you need a structured inventory and readiness view and planning outputs from a supported RVTools file or assisted agent run, as your build of the product allows.
+* Use {MTV} when you are ready to create migration plans and to run cutover in line with the {MTV} product documentation and your own change and security process.
+
+A fully automated hand over from a finished {OMA} result into a {MTV} plan is not guaranteed in every {RH} offering, OpenShift and {OSV} version, or subscription. Read the {OMA}, {OSV}, and {MTV} product documentation for your environment and use only the integrated workflows that {RH} documents for your release line up.

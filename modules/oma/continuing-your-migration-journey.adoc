@@ -1,0 +1,12 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="continuing-your-migration-journey"]
+= What to do after the assessment
+
+[role="_abstract"]
+A migration assessment is an input to a larger program, not the end of the work. When you are satisfied with the data you submitted and the result in the {HCC}, you can do the following with your own organization and, where you have a contract, with {RH}.
+
+* *Align owners* — Share the result with the platform, application, and security owners who will sign off on a target design.
+* *Close gaps* — Address any high severity items the report lists before you invest in a full {MTV} cutover plan. Some items will need a human decision even when the tool cannot automate a fix.
+* *Design the target* — Build a final OpenShift and {OSV} design that includes networks, storage, identity, and day two operations. The assessment supports that design, it does not replace it.
+* *Engage {RH}* — When you have a {RH} account or support contract, use the support and services paths your account team documents. This user guide does not list internal contact details or nonpublic programs.

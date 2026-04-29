@@ -1,0 +1,23 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="inventory-data-collected-oma"]
+= Categories of vSphere data the assessment can use
+
+[role="_abstract"]
+The *Migration Planner* service and the *assisted migration agent* are built to work with a defined set of vSphere and workload signals. A RVTools file carries a subset on the spreadsheet. A live agent can collect a broader or fresher view, depending on the version, mode, and your consent settings.
+
+*Summary of categories* (exact fields depend on the release and the path you use)
+
+* *Datastores* — Free and total capacity, and storage or protocol type, when the data source provides them.
+* *Hosts* — Count and high-level state where exposed.
+* *Networks* — Type and network identifiers, such as VLAN, when the export includes them.
+* *Clusters* and *datacenters* — Counts in summary form.
+* *General inventory* — A vCenter or inventory scope identifier the assessment uses to group the run.
+* *Virtual machines* — In aggregate, counts and sizing, including virtual CPUs, memory, virtual disk count and size, and guest operating system where the collector can read it, plus a status or health signal. The product applies rules to decide whether a VM is *migratable* in a supported sense, or should be reviewed manually, according to the policies installed for your run.
+
+[NOTE]
+====
+This list reflects the *categories* the upstream *migration-planner* project documents for assessment design. A specific {OMA} build or subscription might expose only part of a category, or label fields with different names in the console. Use the in-product help and data-handling information in your *release* as the final reference.
+
+Do not paste a full RVTools workbook or a raw export into any channel that is not approved for confidential infrastructure data.
+====

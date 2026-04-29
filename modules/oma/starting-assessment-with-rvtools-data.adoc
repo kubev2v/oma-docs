@@ -1,0 +1,23 @@
+:_mod-docs-content-type: PROCEDURE
+
+[id="starting-assessment-with-rvtools-data"]
+= Starting an assessment with a RVTools file
+
+[role="_abstract"]
+Use this path when the console in your {OMA} build allows you to create an assessment from a supported RVTools export and you are permitted to create that file in vSphere and upload it.
+
+*Prerequisites*
+
+* You completed the items in _Prerequisites to use a migration assessment_ and you can generate a *supported* RVTools file format and version. Unsupported formats are rejected in the product.
+
+*Procedure*
+
+. In the {HCC}, open the {OMA} or migration assessment feature with your {RH} account, as you would for any other {HCC} app.
+. Start a *new* migration assessment and select the RVTools or file-based option when the interface offers it. If the option is missing, your product build or your entitlement may not include this path, or the flow may be renamed.
+. On the workstation where you run RVTools, connect to your vSphere environment, refresh the data you need, and export a spreadsheet in the form that the product help text or validation message describes.
+. In the {HCC}, use the *Upload* or *Choose file* action and select your export. Wait until the product confirms that the file passed validation. Fix any errors the console reports, for example by re-exporting from RVTools or by removing unsupported sheets if instructed.
+. Complete the remaining on-screen questions. Accept any consent or privacy notices the product shows before the assessment is saved or processed. Read these carefully because they are specific to the path you use and to the region in which the service runs.
+. Open the new assessment in the {HCC} and review the status until the result is *Ready* or a similar terminal state.
+. If the result shows errors, use the in-product help or the messages next to the failure. Do not attach sensitive exports in email unless your security process allows a secure channel.
+
+*Next steps* — When the assessment is ready, continue with _Interpreting risks and migration considerations in an assessment_ and the other result topics in this guide. If you are considering an agent later for deeper data, you can also read _How data handling differs between a file upload and an agent_.

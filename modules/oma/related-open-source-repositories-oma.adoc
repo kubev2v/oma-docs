@@ -1,0 +1,13 @@
+:_mod-docs-content-type: REFERENCE
+
+[id="related-open-source-repositories-oma"]
+= Open source projects that implement the assessment stack
+
+[role="_abstract"]
+{OMA} on the {HCC} is a {RH} product. The *kubev2v* community on GitHub publishes source code for related components. {RH} support, scope, and build identifiers follow your subscription and your product version, not a public repo alone.
+
+* link:https://github.com/kubev2v/migration-planner[migration-planner] — Migration Planner service in the *kubev2v* organization.
+* link:https://github.com/kubev2v/migration-planner-ui-app[migration-planner-ui-app] — Console user interface in the *kubev2v* organization.
+* link:https://github.com/kubev2v/assisted-migration-agent[assisted-migration-agent] — Assisted migration agent in the *kubev2v* organization.
+
+If you open a public issue or a fork, remove host names, account identifiers, and credentials from logs or command output before you post, in line with your information security process.

@@ -1,0 +1,13 @@
+:_mod-docs-content-type: REFERENCE
+
+[id="glossary-terms-migration-advisor"]
+= Glossary of terms for this guide
+
+[role="_abstract"]
+Short definitions to align language in the rest of this user guide. Product names and feature labels in the live console are authoritative for a given release.
+
+* *Migration assessment* — A {OMA} result that is built from a supported data set and the rules and analytics in the product. It is a planning view, not a live migration.
+* *Migration Planner* — The {RH} service side of the solution that stores and presents assessments and may be involved in generating the agent for VMware. The open source repository name is a development reference.
+* *Assisted migration agent* — Software, often as an OVA or image for VMware, that you run in or alongside vSphere to send inventory to the assessment service, according to the mode and consent you select.
+* *RVTools* — A tool that exports vSphere data to a spreadsheet. {OMA} can accept a supported RVTools file when that path is enabled in your product build.
+* *{MTV}* — The Red Hat software used to execute migration of virtual machines to {OSV}. It is for migration execution, not a substitute for a pre-migration *assessment*, though you may use both in the same program of work.

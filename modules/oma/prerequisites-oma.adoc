@@ -1,0 +1,14 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="prerequisites-oma"]
+= Prerequisites to use a migration assessment
+
+[role="_abstract"]
+You need the following in place before you can complete a useful assessment. Exact checks appear in the console in your build.
+
+* A {RH} account and subscription or program that allows access to {OMA} in the {HCC}
+* A supported browser for the {HCC}
+* *For RVTools* — The ability to run RVTools in your vSphere environment and to export a supported spreadsheet format for upload
+* *For an agent* — A VMware environment where you can import and run a supported OVA (or other supported format), network paths that allow the agent to reach the assessment service when you use connected mode, and credentials or tokens as the product user interface and your security policy require
+* Familiarity with your own change control and with who may approve data leaving your data center, even in anonymized form, if a collection path or optional data sharing is offered
+* *OpenShift* — You do not have to be an {OSV} day-one expert to *start* an assessment. You need a basic understanding of why you are targeting {OSV} and who will own the target design after the assessment

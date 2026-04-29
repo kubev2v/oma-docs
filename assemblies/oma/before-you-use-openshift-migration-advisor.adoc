@@ -1,0 +1,15 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="before-you-use-openshift-migration-advisor"]
+= Before you start a migration assessment
+
+[role="_abstract"]
+This chapter lists prerequisites, explains how a file upload and an in VMware agent differ in data handling, and states how you should use planning and sizing outputs. It also compares a RVTools file with an agent based flow at a high level.
+
+include::../../modules/oma/prerequisites-oma.adoc[leveloffset=+1]
+
+include::../../modules/oma/data-handling-and-choices-oma.adoc[leveloffset=+1]
+
+include::../../modules/oma/planning-only-estimates-oma.adoc[leveloffset=+1]
+
+include::../../modules/oma/rvtools-and-agent-comparison-oma.adoc[leveloffset=+1]

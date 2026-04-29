@@ -1,0 +1,13 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="problems-oma-helps-address"]
+= Problems that a migration assessment is meant to help with
+
+[role="_abstract"]
+Teams moving from VMware to {OSV} often need a shared picture of what is running in the estate before they commit to designs and project dates. {OMA} is intended to help with the following needs.
+
+* *Visibility* — Identify which virtual machines and related resources exist in scope and what the inventory looks like in summary form, subject to the collection method and product limits.
+* *Sizing context* — Get guidance about CPU, memory, and storage scale that supports discussion of a target {OSV} or OpenShift environment. Outputs depend on the data you supply and the version of the product, and are not a substitute for a capacity analysis that your organization still wants to run.
+* *Readiness signals* — Surface items that the product can flag, such as operating system compatibility, health-related signals where available, storage and network context, and other migration considerations the rules engine reports.
+
+What you get is limited by the depth of data collection, the rules available in the product, and the fact that the assessment is a snapshot in time, not a substitute for a full design review in every organization.

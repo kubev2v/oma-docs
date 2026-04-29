@@ -1,0 +1,13 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="understanding-migration-advisor-results"]
+= Understanding the assessment
+
+[role="_abstract"]
+This chapter helps you read risk and readiness information, capacity style outputs, and, when your build offers them, time and complexity style views.
+
+include::../../modules/oma/interpreting-risks-in-an-assessment.adoc[leveloffset=+1]
+
+include::../../modules/oma/sizing-recommendations-oma.adoc[leveloffset=+1]
+
+include::../../modules/oma/time-and-complexity-outputs-oma.adoc[leveloffset=+1]

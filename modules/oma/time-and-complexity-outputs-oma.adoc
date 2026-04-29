@@ -1,0 +1,14 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="time-and-complexity-outputs-oma"]
+= Migration time and complexity in the product
+
+[role="_abstract"]
+Some {OMA} builds may show a migration time estimate, a complexity view, or other planning hints next to sizing and risk information. The exact labels and controls come from the console. Do not treat a time range or a score as a service level agreement, a project deadline, or a full picture of work for every application team.
+
+[IMPORTANT]
+====
+Migration time and complexity style outputs are partial or still evolving in many builds. They are not confirmed in the same way as core inventory and risk views. The product may add, move, or hide them between updates. Your product release notes and the help in the product for your entitlement are the source of truth. If a field is missing, experimental, or labeled as beta in the user interface, do not use it for contractual planning.
+
+When you do see a time or complexity line and you use it only for internal order-of-magnitude planning, still compare the result to your runbooks, maintenance windows, and application dependencies. The model does not know blackout dates or data migration work outside the scope of the inventory.
+====

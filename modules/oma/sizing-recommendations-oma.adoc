@@ -1,0 +1,13 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="sizing-recommendations-oma"]
+= Sizing and capacity-related outputs
+
+[role="_abstract"]
+A migration assessment can include sizing *guidance* for a target OpenShift or {OSV} footprint, in the form the product offers in your version. The service compares the aggregate resource picture from your RVTools file or agent run to the overhead and planning assumptions the product team builds into that release. It is not a substitute for measuring real utilization and storage performance on the cluster you eventually build, or for your resiliency and high-availability design.
+
+* *How to use the output* — Compare the suggested size to your own rules for headroom, maintenance windows, and separate failure domains. If you split work across many OpenShift *projects* or *namespaces*, you may need more *nodes* or *pools* than a single top-level line item shows.
+
+* *When to dig deeper* — If the report flags very uneven resource use, unusual storage or network patterns, or legacy guests that are hard to size from inventory alone, treat the sizing line as a conversation starter, not a purchase order.
+
+Final hardware or cloud shape and storage classes are decisions you make at detailed design, with your {RH} account or services team and your own internal review when you add them.

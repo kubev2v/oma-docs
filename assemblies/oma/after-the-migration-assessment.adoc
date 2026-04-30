@@ -1,0 +1,11 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="after-the-migration-assessment"]
+= After the assessment
+
+[role="_abstract"]
+This chapter places {OMA} next to {MTV} in a migration program, and suggests clear next steps once you have a result. It does not include partner or third party marketplaces.
+
+include::../../modules/oma/oma-and-mtv-complementary-use.adoc[leveloffset=+1]
+
+include::../../modules/oma/continuing-your-migration-journey.adoc[leveloffset=+1]

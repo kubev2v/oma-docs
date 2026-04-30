@@ -1,0 +1,9 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="support-for-large-environments-oma"]
+= Using {OMA} in very large VMware estates
+
+[role="_abstract"]
+The user experience is tuned for common midsize footprints. Larger organizations can still use the service for an early view, within product limits and your own policies.
+
+{OMA} is often used by organizations whose VMware footprint is in a midsize range on average, including environments on the order of two thousand virtual machines. That focus does not block you from uploading inventory from a larger estate. If you operate at very large scale, you can still use {OMA} for initial investigation and assessment, and you should confirm limits, support expectations, and operational approach with your {RH} account team or partner where applicable.

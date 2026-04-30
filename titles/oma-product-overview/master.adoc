@@ -5,8 +5,26 @@ include::common/_attributes.adoc[]
 include::_title-attributes.adoc[]
 
 // The name of the title is defined in _title-attributes.adoc
-// Top-level title anchor (distinct from chapter assembly id="oma-product-overview")
+// Top-level title anchor (distinct from chapter assembly ids below)
 [id="guide-oma-product-overview"]
 = {ProjectName}
 
-include::assemblies/oma/oma-product-overview.adoc[leveloffset=+1]
+[role="_abstract"]
+{Abstract}
+
+// Full guide chapters (same order as titles/openshift-migration-advisor/master.adoc).
+// Omit assemblies/oma/oma-product-overview.adoc — introducing-openshift-migration-advisor.adoc already contains that intro content.
+
+include::assemblies/oma/introducing-openshift-migration-advisor.adoc[leveloffset=+1]
+
+include::assemblies/oma/before-you-use-openshift-migration-advisor.adoc[leveloffset=+1]
+
+include::assemblies/oma/creating-a-migration-assessment.adoc[leveloffset=+1]
+
+include::assemblies/oma/understanding-migration-advisor-results.adoc[leveloffset=+1]
+
+include::assemblies/oma/after-the-migration-assessment.adoc[leveloffset=+1]
+
+include::assemblies/oma/frequently-asked-questions-oma.adoc[leveloffset=+1]
+
+include::assemblies/oma/additional-documentation-resources-for-oma.adoc[leveloffset=+1]

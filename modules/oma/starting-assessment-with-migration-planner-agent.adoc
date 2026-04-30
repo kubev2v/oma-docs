@@ -1,0 +1,30 @@
+:_mod-docs-content-type: PROCEDURE
+
+[id="starting-assessment-with-migration-planner-agent"]
+= Starting an assessment with a VMware agent
+
+[role="_abstract"]
+The assisted migration *agent* connects to the Migration Planner service, collects vSphere data that your rules allow, and reports to the {HCC} in supported modes. This procedure describes a typical, high-level sequence. The authoritative steps are the ones you receive when you *generate* or *download* the OVA, and the *agent* and *planner* documentation for your *version*.
+
+*Prerequisites*
+
+* A VMware vSphere deployment where you can import an OVA and power on a VM that meets the image requirements.
+* Network and firewall settings that let the agent reach the assessment and planner endpoints in the mode you select (*connected* or *disconnected*), and any proxy settings your site requires. Your organization must allow these connections under its policies.
+* Identifiers that the service assigns, such as an *agent* ID and *source* ID in UUID form, and a folder of OPA policy files if your build requires OPA for VM validation. Use the value placeholders your operator gives you, not examples from a document.
+* Optional JWT or other authentication material if the console in your build requires a token to register the agent with the planner service, generated through the process your organization uses, not with sample keys from a repository.
+
+*Procedure at a high level*
+
+. In the {HCC}, start a *new* migration assessment and choose the agent-based path when the interface offers it, or use the *Generate* or *Download agent* action if your product presents it before an assessment is created, depending on your build.
+. Record the UUIDs and any registration steps the *console* or *planner* gives you. Store secrets in a password safe, not in plain text in tickets or wikis.
+. Import the OVA into the VMware cluster your design specifies. Allocate CPU, memory, and disk to match the *release notes* for the *agent* *image* you are using, not a generic size.
+. Configure the agent to run in the *mode* your design requires, *connected* or *disconnected*, and point it to the *console* and *planner* endpoints the product user interface or your {RH} operator specifies for *your* *environment* only. Do not copy internal host names from a lab into production.
+. Start the agent and confirm in the {HCC} that the *source* moves to a healthy, reporting state, using the *status* the product displays.
+. When the assessment is complete, open the results in the {HCC}. If your build also provides a *local* appliance with a report view, use that for any detailed drill-down the product team documents for that path.
+
+*Next steps* — Review the assessment outputs as described in _Interpreting risks and migration considerations in an assessment_. For command lines, flags, and version-specific deployment details, use the {RH} *Migration Planner* and assisted migration *agent* documentation for your *product* version, not a generic clone of upstream examples.
+
+[IMPORTANT]
+====
+Example commands in open source repositories are technical references only. Use your own tokens, UUIDs, and endpoints, and never post credentials or real identifiers in a public or shared log.
+====

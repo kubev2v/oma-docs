@@ -1,0 +1,13 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="creating-a-migration-assessment"]
+= Creating a migration assessment
+
+[role="_abstract"]
+Follow one of the procedures that matches the data path your {OMA} build makes available, and read the reference on what the planner or agent can collect. Your release may offer only one of these paths.
+
+include::../../modules/oma/starting-assessment-with-rvtools-data.adoc[leveloffset=+1]
+
+include::../../modules/oma/starting-assessment-with-migration-planner-agent.adoc[leveloffset=+1]
+
+include::../../modules/oma/inventory-data-collected-oma.adoc[leveloffset=+1]

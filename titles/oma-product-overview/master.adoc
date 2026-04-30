@@ -5,7 +5,8 @@ include::common/_attributes.adoc[]
 include::_title-attributes.adoc[]
 
 // The name of the title is defined in _title-attributes.adoc
-[id="oma-product-overview"]
+// Top-level title anchor (distinct from chapter assembly id="oma-product-overview")
+[id="guide-oma-product-overview"]
 = {ProjectName}
 
-include::assemblies/oma/assembly-oma-product-overview.adoc[leveloffset=+1]
+include::assemblies/oma/oma-product-overview.adoc[leveloffset=+1]

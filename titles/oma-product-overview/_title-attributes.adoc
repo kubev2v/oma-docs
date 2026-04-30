@@ -1,5 +1,9 @@
 // The name of the title
 :ProjectName: {OMA}
+// Used by docinfo.xml (CCSS / Pantheon publication metadata)
+:ProductName: {OMA}
+:ProductNumber: 1
+:ProductRelease: 1.0
 // The subtitle and abstract: replace pass:[] with copy when you have product resources
 :Subtitle: pass:[]
 :Abstract: pass:[]

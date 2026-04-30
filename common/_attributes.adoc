@@ -19,6 +19,9 @@
 :RH: Red{nbsp}Hat
 :OCP: OpenShift{nbsp}Container{nbsp}Platform
 :OMA: OpenShift{nbsp}Migration{nbsp}Advisor
+:OSV: OpenShift{nbsp}Virtualization
+:HCC: Red{nbsp}Hat{nbsp}Hybrid{nbsp}Cloud{nbsp}Console
+:MTV: Migration{nbsp}Toolkit{nbsp}for{nbsp}Virtualization
 :OCP-short: OpenShift
 :ProductName: {OMA}
 :ProductNumber: 1

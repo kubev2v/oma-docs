@@ -1,18 +1,31 @@
-# oma-docs
+# OpenShift Migration Advisor (OMA) Documentation
 
-This is the documentation home for **OpenShift Migration Advisor (OMA)** and the migration-assessment work happening in the [kubev2v](https://github.com/kubev2v) community.
+This is the documentation home for the **OpenShift Migration Advisor (OMA)** and the migration-assessment initiatives within the kubev2v community.
 
-If you are planning a move from VMware toward **OpenShift Virtualization**, you are juggling inventory, risk, and timelines. OMA is meant to make that first step—**understanding what you have and what it will take to migrate**—a little less guesswork. **oma-docs** is where we write that story in one place, in language that holds up when you are not looking at a terminal or a product console.
+OMA is a web-based service available on the Red Hat Hybrid Cloud Console designed to evaluate vCenter environments for migration. If you are planning a move from VMware toward OpenShift Virtualization, OMA serves as an analytical wizard to help you understand your current inventory, identify technical risks, and estimate migration timelines.
 
+The oma-docs repository is where we maintain the narrative. It covers how OMA fits together, who it is built for, and what users should expect when they run an assessment.
 ## What this is
-
 **oma-docs** is not another code repository with a long README. It is where we keep the **narrative**. It covers how OMA fits together, who it is for, and what people should expect when they run an assessment or read a report.
 
 ## What we are trying to do
 
-- **Onboarding** — Take someone from “what is OMA?” to the practical next steps, including how assessments run, which surfaces to use, and where to look when you need the nitty-gritty in a service repo.
+This repository focuses on bridging the gap between the source code and the user experience. Our goals are:
 
-- **Alignment** — When we talk about the same concepts here as in the code, the experience feels consistent. The implementation lives in [Migration Planner](https://github.com/kubev2v/migration-planner), the [assisted migration agent](https://github.com/kubev2v/assisted-migration-agent), and the [Migration Planner UI](https://github.com/kubev2v/migration-planner-ui-app).
+* **Onboarding:** Take users from learning "What is OMA?" to practical next steps, including how automated discovery processes run and how to interpret assessment results.  
+* **Managing Expectations:** Clearly communicate that OMA provides insights, capacity plans, and time requirements that are estimations for planning purposes, not guarantees.  
+* **Alignment:** Ensure that the concepts we discuss here match the implementation found across the Migration Planner, the agent, and the UI, creating a consistent experience.
+
+The implementation lives in
+
+* [Migration Planner](https://github.com/kubev2v/migration-planner)
+* [Assisted migration agent](https://github.com/kubev2v/assisted-migration-agent)
+* [Migration Planner UI](https://github.com/kubev2v/migration-planner-ui-app).
+
+## Target Audience**
+
+OMA is optimized for self-service use by VMware administrators and IT architects. The guided experience requires very little technical expertise and no prior OpenShift experience to run the initial assessment. It is primarily designed to support midsize business environments managing up to roughly 2,000 virtual machines.
+
 
 ## What you will find here
 
@@ -20,7 +33,7 @@ The detailed pages will show up as we add them. For the moment, this **README** 
 
 ## The software this documentation talks about
 
-OMA is built as several pieces. **oma-docs** is the friendly signpost, and it points you to the right building when you need to *run*, *build*, or *contribute* something specific.
+OMA is built using several distinct pieces. When you need to dive into the technical details, run a service, or contribute to the code, refer to the specific repositories below:
 
 | Component | Repository | In practice |
 | --- | --- | --- |
@@ -32,5 +45,7 @@ OMA is built as several pieces. **oma-docs** is the friendly signpost, and it po
 
 - The rest of the [kubev2v](https://github.com/kubev2v) org—sibling projects around migration and virtualization.
 - The **OpenShift Migration Advisor** / **migration-advisor** documentation that ships with the product, when you need the polished, customer-facing site. This repo is where we **draft and version** the narrative in step with the code, so the two can stay friends.
+
+## Get involved
 
 If something here is wrong, outdated, or missing, open an issue or a pull request. Good documentation is a conversation, not a monument.

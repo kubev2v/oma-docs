@@ -1,0 +1,26 @@
+// Include shared, global attributes
+include::../../common/_attributes.adoc[]
+
+// Include per-title attributes
+include::_title-attributes.adoc[]
+
+// The name of the title is defined in _title-attributes.adoc
+[id="openshift-migration-advisor-user-guide"]
+= {ProjectName}
+
+[role="_abstract"]
+{Abstract}
+
+include::../../assemblies/oma/introducing-openshift-migration-advisor.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/before-you-use-openshift-migration-advisor.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/creating-a-migration-assessment.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/understanding-migration-advisor-results.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/after-the-migration-assessment.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/frequently-asked-questions-oma.adoc[leveloffset=+1]
+
+include::../../assemblies/oma/additional-documentation-resources-for-oma.adoc[leveloffset=+1]

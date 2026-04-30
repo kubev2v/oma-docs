@@ -1,0 +1,11 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="how-you-access-oma"]
+= How you use {OMA} in the {HCC}
+
+[role="_abstract"]
+{OMA} is offered as a web experience after you sign in to the {HCC} with your {RH} account. The interface walks you through creating a migration assessment. Prompts, labels, and legal notices live in the product, and they are the source of truth for the exact flow in your build.
+
+To open the service, use the {HCC} applications menu or search to find the {OMA} or migration assessment entry, then follow the on-screen steps. The service may be labeled to reflect your product bundle. Do not bookmark or share internal, nonproduction, or partner-only hosts. Use only the console that your {RH} subscription or program assigns you.
+
+If your organization does not have access to the {HCC}, contact {RH} or an authorized partner to find out which assessment options apply to you.

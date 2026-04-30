@@ -1,0 +1,11 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="audience-and-scale-for-oma"]
+= Who typically uses the service, and at what scale
+
+[role="_abstract"]
+The user experience is designed for *VMware administrators* and *IT and platform architects* who know their vSphere environment. You should be able to find or export the data the service accepts, and understand what you are authorizing if you use an agent in your environment.
+
+Many organizations with moderate VMware footprints use a self-service assessment to start the conversation. Very large environments may still use the product for a first look, or they may combine it with a deeper engagement through {RH} or their own practices. A practical limit on how much inventory you should drive through a single self-service flow depends on product support and on your own operational policies. If your estate is at the very large end, validate approach and support with your {RH} account or partner before you rely on the product as your only method of analysis.
+
+The service does not replace a formal project plan, resourcing, or a signed infrastructure design. It is one input to those decisions.

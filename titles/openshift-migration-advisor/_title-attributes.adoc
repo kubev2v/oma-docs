@@ -1,4 +1,8 @@
 :ProjectName: {OMA} user guide
+// Used by docinfo.xml (CCSS / Pantheon publication metadata)
+:ProductName: {OMA}
+:ProductNumber: 1
+:ProductRelease: 1.0
 :Subtitle: Plan migration from VMware to {OSV} with environment insight before you move workloads
 :Abstract: {OMA} is a {HCC} service for VMware customers who need an assessment of vSphere inventory, sizing context, and migration considerations. This guide explains what the service is for, how to supply data, how to read results, and what to do next. It does not replace the product user interface, your legal agreements, or your organization’s data-handling requirements.
 :oma-title-id: openshift-migration-advisor

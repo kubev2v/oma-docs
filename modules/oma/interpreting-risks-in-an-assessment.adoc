@@ -1,0 +1,15 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="interpreting-risks-in-an-assessment"]
+= Interpreting risks and migration considerations in an assessment
+
+[role="_abstract"]
+When a migration assessment is ready, the {HCC} and, where your build offers it, a local appliance, show *indications* the product can derive from the data. These may be labeled as risks, *blockers*, *warnings*, or *considerations* depending on the release.
+
+* *What the result is* — A machine-driven view of items that match rules in the product and, where your version uses them, in optional policy engines such as OPA for virtual machine validation. The report does not replace a full human review of application behavior or of data and compliance needs.
+
+* *What you should do* — Triage each line with the owner of the workload and of the dependencies it has. If the user interface links to a remediation note or a {RH} document, use that as the source for the *pattern* the product detected, not a third-party copy.
+
+* *What the result is not* — The assessment is not a warranty that every workload will run on {OSV} or OpenShift without design or change work, or that all edge cases are covered.
+
+Treating a message as a formal security or compliance *finding* is a decision for your own governance process in addition to the tool output.

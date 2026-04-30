@@ -1,0 +1,4 @@
+# Match rhel-10-docs newdoc settings
+file_prefixes = false
+anchor_prefixes = false
+simplified = true

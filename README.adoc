@@ -1,0 +1,25 @@
+= oma-docs (skeleton)
+
+This repository is structured like `rhel-10-docs` (see `rhel-10-docs` in your local or internal clone): `common/_attributes.adoc` for shared attributes, one title under `titles/`, one assembly under `assemblies/`, and a small set of sample modules. It is a *skeleton* only: no product copy, no preface/feedback file, and no build automation yet.
+
+A full documentation set (additional assemblies, `providing-feedback`, Pantheon, Vale, and CI) is out of scope for now. Add those when you have content and process.
+
+== Layout
+
+* `common/_attributes.adoc` — global AsciiDoc attributes
+* `modules/oma/*.adoc` — one concept and one reference module (templates for more modules)
+* `assemblies/oma/` — one assembly, including a `modules` symlink to the repo `modules/` directory (required for `include::modules/...` resolution, same pattern as in `rhel-10-docs`)
+* `titles/oma-product-overview/` — `master.adoc`, `_title-attributes.adoc`, `docinfo.xml`, `build.cfg`, and symlinks to `assemblies/`, `common/`, `images/`, and `modules/`
+* `images/` — for figures (empty; `.gitkeep` only)
+
+== Build a preview
+
+....
+cd titles/oma-product-overview
+asciidoctor master.adoc
+....
+
+== Add later (when you have resources)
+
+* Copy and adapt `common/providing-feedback-on-red-hat-documentation.adoc` from `rhel-10-docs`, then `include` it in `master.adoc` (before the assembly), if you use the standard feedback procedure.
+* Replace `pass:[]` in `_title-attributes.adoc` and in module/assembly abstracts with SSG short descriptions and body content.

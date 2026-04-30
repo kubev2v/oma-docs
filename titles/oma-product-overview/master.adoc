@@ -1,0 +1,12 @@
+// Include shared, global attributes
+include::common/_attributes.adoc[]
+
+// Include per-title attributes
+include::_title-attributes.adoc[]
+
+// The name of the title is defined in _title-attributes.adoc
+// Top-level title anchor (distinct from chapter assembly id="oma-product-overview")
+[id="guide-oma-product-overview"]
+= {ProjectName}
+
+include::assemblies/oma/oma-product-overview.adoc[leveloffset=+1]

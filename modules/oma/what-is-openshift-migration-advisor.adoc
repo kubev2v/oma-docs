@@ -1,0 +1,9 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="what-is-openshift-migration-advisor"]
+= What {OMA} is
+
+[role="_abstract"]
+{OMA} is a {HCC} service that helps you review a VMware vSphere environment when you are considering {OSV} as a target. The service produces a *migration assessment* from data you provide. The assessment highlights infrastructure and workload information, risk or compatibility signals the product can detect, and planning outputs such as sizing context. It is a planning step. It does not migrate virtual machines by itself.
+
+{OMA} is implemented with a user experience in the console and with services or optional software that collect or process vSphere information. You do not need to be an {OSV} administrator to start an assessment, but you do need access to your vSphere environment or to RVTools output, according to the path you choose.

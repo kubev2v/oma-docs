@@ -1,0 +1,9 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="oma-product-overview"]
+= {OMA} product overview
+
+[role="_abstract"]
+This chapter introduces {OMA}, what the service is for, where it runs on the {HCC}, and how a migration assessment fits in your planning before you invest in migration execution with tools such as {MTV}. It reuses the same introduction as the full user guide so the overview and the guide stay aligned.
+
+include::../../modules/oma/what-is-openshift-migration-advisor.adoc[leveloffset=+1]

@@ -1,0 +1,11 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="additional-documentation-resources-for-oma"]
+= Glossary and additional resources
+
+[role="_abstract"]
+This chapter defines terms used in this user guide and lists public *kubev2v* repositories for readers who work with source at a high level. It does not replace the {RH} product documentation for a given release.
+
+include::../../modules/oma/glossary-terms-migration-advisor.adoc[leveloffset=+1]
+
+include::../../modules/oma/related-open-source-repositories-oma.adoc[leveloffset=+1]

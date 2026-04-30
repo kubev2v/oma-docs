@@ -1,0 +1,16 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="planning-only-estimates-oma"]
+= Planning outputs are estimates, not promises
+
+[role="_abstract"]
+Any suggested cluster size, migration time window, *complexity* view, or similar output from {OMA} is an *estimation* for your planning. It is based on the inventory and rules the product can see, heuristics that your build implements, and limits on how well any automated model can reflect your runbooks, maintenance windows, network reality, and storage performance.
+
+* Treat numbers as a starting point for design workshops and for comparing scenarios, not as a service level agreement, quote, or guarantee.
+* Update your plan after you have a real target design, a migration path with {MTV} or any other tool you use, and validation in your test environment.
+* If a number looks wrong, validate inputs (for example, a stale RVTools file, or a subset of the estate that the agent can see) before you make project commitments.
+
+[IMPORTANT]
+====
+Your organization and your {RH} services team, not the assessment alone, are responsible for final sizing, scheduling, and risk sign-off for a production cutover.
+====

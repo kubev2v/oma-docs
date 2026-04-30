@@ -1,0 +1,17 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="rvtools-and-agent-comparison-oma"]
+= RVTools upload compared with a VMware agent
+
+[role="_abstract"]
+The product may offer one or both of these paths. Use what your build exposes and what your security model allows.
+
+*RVTools spreadsheet*
+
+* *When it helps* — You already have RVTools, you want a light-touch upload, and you can accept a summary or anonymized view that matches your chosen privacy setting.
+* *What you give up* — A file alone does not run live queries or deep in-guest checks in the VMware estate. The assessment depth matches what the spreadsheet and product rules can derive.
+
+*Assisted agent in vSphere*
+
+* *When it helps* — You need a richer view of the environment (including views that may be available *only* on a local agent appliance) and you can deploy software in the VMware side.
+* *What you should plan for* — Import, credentials, OPA or policy folders if your build requires them, and network paths. Use the product documentation and runbooks for your build for the exact image name and size.

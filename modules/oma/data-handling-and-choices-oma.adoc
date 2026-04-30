@@ -1,0 +1,11 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="data-handling-and-choices-oma"]
+= How data handling differs between a file upload and an agent
+
+[role="_abstract"]
+You can build an assessment in more than one way, depending on what the product in your build supports. A common choice is *upload* (for example, RVTools) versus a *local agent* in VMware. Data handling, reporting depth, and whether anything is available to the cloud console can differ.
+
+* *RVTools upload* — The upload usually shares a *minimal* or anonymized set of data with the service, according to the privacy statement and the technical behavior described for your release. The console shows what you are agreeing to.
+
+* *Agent in VMware* — A default for many connected-agent flows is to keep detailed inspection data in the *local* appliance, not to share it with {RH} unless you turn on a separate, explicit consent. Some recommendations or views may appear only in the {HCC} *after* you opt in, while full per-VM drill down may be available in the local appliance, depending on the product version. Always use the in-product data sharing terms for your environment.

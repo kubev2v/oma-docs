@@ -9,9 +9,6 @@ include::_title-attributes.adoc[]
 [id="guide-oma-product-overview"]
 = {ProjectName}
 
-[role="_abstract"]
-{Abstract}
-
 // Full guide chapters (canonical assembly order for this title).
 // Omit assemblies/oma-product-overview.adoc — introducing-openshift-migration-advisor.adoc already contains that intro content.
 

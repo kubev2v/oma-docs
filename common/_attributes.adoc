@@ -4,9 +4,6 @@
 // General settings
 ///////////////////
 
-// Required when the title includes assemblies that use level-0 section titles (`= Chapter`)
-:doctype: book
-
 :imagesdir: images
 :toc:
 :toclevels: 3

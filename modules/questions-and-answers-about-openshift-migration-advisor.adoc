@@ -62,7 +62,7 @@ Interactive Arcade demos:
 [id="release-cadence-oma"]
 == How often the {OMA} changes
 
-The {OMA} is a continuously updated web service on the {HCC}. The release schedule combines major enhancements with frequent updates to the active service. 
+The {OMA} is a continuously updated web service on the {HCC}. The release schedule combines major enhancements with frequent updates to the active service.
 
 [id="language-support-oma"]
 == Language availability for the product and this guide
@@ -72,6 +72,4 @@ Currently, the {OMA} user interface and documentation are available in English. 
 [id="support-for-large-environments-oma"]
 == Using the {OMA} in large VMware estates
 
-The service is designed for common midsize environments. However, if you have a larger organization, you can still use the service for an initial assessment within the product limits and your own policies.
-
-The {OMA} is designed for average midsize VMware environments, including those with approximately 2,000 virtual machines. However, you can still upload inventory from a larger estate to use the service for initial investigation and automated reporting. If you operate at a large scale, confirm the product limits, support expectations, and operational approach with your {RH} account team or partner.
+You can use the {OMA} to assess VMware environments of varying sizes, from standard deployments to large enterprise estates. Upload inventory from large-scale environments to generate automated reports and plan migrations within your own policies. If you operate at an exceptionally large scale, confirm support expectations and your operational approach with your Red Hat account team or partner.

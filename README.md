@@ -24,8 +24,7 @@ The implementation lives in
 
 ## Target audience
 
-OMA is optimized for self-service use by VMware administrators and IT architects. The guided experience requires very little technical expertise and no prior OpenShift experience to generate the initial automated migration report. It is primarily designed to support midsize business environments managing up to roughly 2,000 virtual machines.
-
+OMA is optimized for self-service use by VMware administrators and IT architects. The guided experience requires very little technical expertise and no prior OpenShift experience to generate the initial automated migration report. It is designed to support environments of varying sizes, smoothly handling assessments from standard deployments up to large enterprise estates.
 
 ## What you will find here
 

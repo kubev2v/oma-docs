@@ -1,0 +1,77 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="benchmarking-storage-throughput-with-the-migration-forecaster"]
+= Benchmarking storage throughput with the Migration Forecaster
+
+[role="_abstract"]
+The Migration Forecaster measures actual disk-copy throughput between VMware datastore pairs in your vCenter environment. Where your {OMA} build includes this feature, you can use real throughput measurements instead of the default transfer rate assumption to produce more accurate migration time estimates.
+
+[id="oma-migration-forecaster"]
+== How the Migration Forecaster works
+
+The forecaster runs disk-copy benchmarks directly on your vCenter infrastructure:
+
+. It creates a temporary virtual machine and a benchmark disk on the source datastore.
+. It copies the benchmark disk to the target datastore multiple times and measures wall-clock transfer time for each iteration.
+. It computes throughput statistics—including mean, median, and confidence intervals—from the measured results.
+. It uses those statistics to project a data-driven migration time estimate for each datastore pair.
+
+All temporary resources are cleaned up automatically when each benchmark completes, whether or not it succeeds.
+
+[id="oma-temporary-resources"]
+== Temporary resources created in vCenter
+
+The forecaster creates the following resources in your vCenter environment while a benchmark is running:
+
+[cols="2,4",options="header"]
+|===
+|Resource |Purpose
+
+|Filler VM (Alpine Linux, ~256 MB)
+|Fills the benchmark disk with random data so the copy reflects realistic conditions. Destroyed when filling completes.
+
+|Alpine boot disk and seed ISO
+|Operating system and configuration for the filler VM. Deleted after each datastore pair completes.
+
+|Benchmark disk (default 10 GB)
+|The disk filled with random data that the forecaster copies to the target. Deleted after each pair completes.
+
+|Clone disk on target datastore
+|Copy of the benchmark disk created on the target during each iteration. Deleted after each iteration.
+|===
+
+Temporary resource names are prefixed with `forecaster-` or `filler-image-` so they are easy to identify if manual cleanup is needed.
+
+[NOTE]
+====
+If the agent stops while a benchmark is in progress, temporary files or directories may remain on the datastores and require manual cleanup.
+====
+
+== Required vSphere privileges
+
+The vCenter credentials used for benchmarking must include the following privileges. The forecaster verifies these before it starts and reports any that are missing.
+
+* `Datastore.AllocateSpace`
+* `Datastore.Browse`
+* `Datastore.DeleteFile`
+* `Datastore.FileManagement`
+* `VirtualMachine.Inventory.Create`
+* `VirtualMachine.Inventory.Delete`
+* `VirtualMachine.Provisioning.Clone`
+* `VirtualMachine.Interact.PowerOn`
+* `VirtualMachine.Config.AddRemoveDevice`
+
+== When to use the Migration Forecaster
+
+Use the Migration Forecaster when:
+
+* The default 620 Mbps transfer rate assumption does not reflect your actual network and storage performance.
+* You are planning migration for a large estate where time estimate accuracy is important for scheduling decisions.
+* You want to compare throughput across different source-and-target datastore combinations before committing to a migration topology.
+
+Do not run the forecaster during a production maintenance window, as temporary VM creation in vCenter could affect other workloads running at the same time.
+
+[NOTE]
+====
+The Migration Forecaster is available in specific {OMA} builds. Check the in-product help and your release notes to confirm whether this feature is available in your environment.
+====

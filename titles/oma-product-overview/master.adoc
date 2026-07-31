@@ -18,6 +18,8 @@ include::assemblies/before-you-start-an-automated-migration-report.adoc[leveloff
 
 include::assemblies/creating-an-automated-migration-report.adoc[leveloffset=+1]
 
+include::assemblies/agent-capabilities-and-assessment-methodology.adoc[leveloffset=+1]
+
 include::assemblies/understanding-the-automated-report.adoc[leveloffset=+1]
 
 include::assemblies/after-the-automated-report.adoc[leveloffset=+1]

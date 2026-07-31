@@ -1,0 +1,15 @@
+:_mod-docs-content-type: ASSEMBLY
+
+[id="agent-capabilities-and-assessment-methodology"]
+= What the agent can assess
+
+[role="_abstract"]
+The assisted migration agent goes beyond static inventory to classify virtual machines for migration readiness and produce planning outputs such as complexity scores and time estimates. This chapter explains how those outputs are derived so you can interpret and act on them effectively.
+
+include::../modules/how-the-agent-classifies-virtual-machines.adoc[leveloffset=+1]
+
+include::../modules/how-complexity-scores-work.adoc[leveloffset=+1]
+
+include::../modules/how-migration-time-estimates-are-calculated.adoc[leveloffset=+1]
+
+include::../modules/benchmarking-storage-throughput-with-the-migration-forecaster.adoc[leveloffset=+1]

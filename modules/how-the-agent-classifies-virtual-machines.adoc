@@ -1,0 +1,41 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="how-the-agent-classifies-virtual-machines"]
+= How the agent classifies virtual machines
+
+[role="_abstract"]
+The assisted migration agent evaluates each virtual machine in your vSphere inventory and assigns it to one of three readiness categories. These categories appear in the automated migration report and help you prioritize remediation work before you plan a migration cutover.
+
+[id="oma-migratable"]
+== Migratable
+
+The virtual machine passes all rules the product applies. No blockers or warnings are detected.
+
+[id="oma-migratable-warnings"]
+== Migratable with warnings
+
+The virtual machine can be migrated, but the agent has detected conditions you should review and resolve before or during the migration. Common warnings include:
+
+* *Changed Block Tracking (CBT) not enabled* — CBT improves incremental migration efficiency. Enable it on the VM in vSphere before migration.
+* *VMware Tools not installed or outdated* — VMware Tools must be installed and at a supported version for a reliable migration.
+* *More than 4 NICs attached* — Virtual machines with a high NIC count require additional network configuration planning on the target.
+
+Warnings do not prevent migration, but they increase the risk of issues during cutover if left unaddressed.
+
+[id="oma-not-migratable"]
+== Not migratable
+
+The virtual machine has at least one condition that blocks migration based on the product rules. Common blockers include:
+
+* *Unsupported disk types* — Raw Device Mappings (RDM) and shared VMDKs are not supported by the migration toolchain.
+* *Unsupported guest operating system* — The OS has not been verified for conversion by the underlying migration toolchain.
+* *Snapshots present* — Consolidate or remove all snapshots before migration.
+* *USB devices attached* — Virtual USB devices are not supported and must be removed before migration.
+* *NVRAM encryption* — VMs with NVRAM encryption require additional handling before migration is possible.
+
+When a VM is marked as not migratable, the report shows the specific reason. Address each blocker before including the VM in a migration plan.
+
+[NOTE]
+====
+Classification rules depend on the version of the product and the policies installed in your environment. Use the in-product help as the final reference for your release.
+====

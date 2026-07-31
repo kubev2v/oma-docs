@@ -1,0 +1,43 @@
+:_mod-docs-content-type: CONCEPT
+
+[id="how-migration-time-estimates-are-calculated"]
+= How migration time estimates are calculated
+
+[role="_abstract"]
+When your {OMA} build displays a migration time estimate, the value is the sum of two modelled phases: storage data transfer and post-migration troubleshooting. Understanding the assumptions behind each phase helps you interpret the estimate and adjust inputs to better reflect your environment.
+
+[id="storage-migration-phase"]
+== Storage migration phase
+
+The storage phase estimates the time required to copy VM disk data from the source VMware datastore to the target cluster over the network.
+
+The default assumptions are:
+
+* *Transfer rate*: 620 Mbps (approximately 77.5 MB/s), equivalent to roughly 110 minutes per 500 GB of provisioned data.
+* *Data size*: Total provisioned disk size across all VMs in scope, measured in GB.
+* *Transfer model*: Linear sustained transfer; the estimate does not account for concurrent migrations running in parallel.
+
+If your network has higher or lower throughput than the default, the resulting estimate may differ significantly from real migration time. Use the Migration Forecaster, where available in your build, to measure real datastore-to-datastore throughput. See xref:modules/benchmarking-storage-throughput-with-the-migration-forecaster.adoc#benchmarking-storage-throughput-with-the-migration-forecaster[Benchmarking storage throughput with the Migration Forecaster].
+
+[id="post-migration-phase"]
+== Post-migration troubleshooting phase
+
+The troubleshooting phase estimates the calendar time your team spends on post-migration checks and remediation after VMs are moved.
+
+The default assumptions are:
+
+* *Time per VM*: 60 minutes of engineer time per VM.
+* *Team size*: 10 engineers working in parallel.
+* *Working hours*: 8 hours per day.
+
+The model divides total engineer-minutes by the number of engineers to produce wall-clock time. For example, 50 VMs at 60 minutes each with 10 engineers working in parallel gives a 5-hour window.
+
+[id="combined-estimate"]
+== Combined estimate
+
+The total estimated migration time is the sum of the storage phase and the troubleshooting phase. The product presents this as a range, not a fixed commitment.
+
+[IMPORTANT]
+====
+Migration time estimates are planning inputs for internal order-of-magnitude discussions. They do not account for application-specific blackout windows, data migration work outside VM storage, or dependencies between workloads. Compare the estimate against your runbooks and team capacity before using it for scheduling.
+====

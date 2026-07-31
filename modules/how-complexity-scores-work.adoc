@@ -1,0 +1,77 @@
+:_mod-docs-content-type: REFERENCE
+
+[id="how-complexity-scores-work"]
+= How complexity scores work
+
+[role="_abstract"]
+When your {OMA} build displays a complexity view, each virtual machine or workload group is assigned a score from 1 to 4. The score is derived from two independent dimensions: the guest operating system type and the total provisioned disk size. A higher score indicates a more complex migration that may need more preparation or manual handling.
+
+[id="os-complexity-scores"]
+== OS complexity scores
+
+The product determines the OS score by matching the guest OS name that VMware reports against a defined list. Matching is case-insensitive. If the OS name does not match any known entry, the VM receives a score of 0, which means complexity cannot be assessed automatically.
+
+[cols="1,3,4",options="header"]
+|===
+|Score |Meaning |Examples
+
+|*1*
+|Straightforward migration, minimal intervention expected
+|Red Hat Enterprise Linux 6–10, Fedora, CentOS 6–9, Oracle Linux 6–9, Rocky Linux 8–9
+
+|*2*
+|Standard migration, some attention required
+|Red Hat Enterprise Linux 4–5, SUSE Linux Enterprise 12–15, Windows Server 2016–2025, Windows 10 and 11
+
+|*3*
+|More complex migration, additional effort expected
+|Ubuntu, Debian, SUSE Linux Enterprise 8–11, openSUSE, AlmaLinux 8–9, older Windows Server (2000–2012 R2), Windows XP–8, Oracle Solaris, FreeBSD
+
+|*4*
+|May require manual intervention or special handling
+|Database workloads such as Microsoft SQL Server
+
+|*0*
+|OS not recognized; complexity cannot be assessed automatically
+|Unknown or custom operating systems
+|===
+
+[id="disk-complexity-scores"]
+== Disk complexity scores
+
+The disk score is based on the total provisioned disk size across the virtual machine.
+
+[cols="1,2,4",options="header"]
+|===
+|Score |Total provisioned disk size |Meaning
+
+|*1*
+|≤ 10 TB
+|Small to moderate storage; standard migration path
+
+|*2*
+|11–20 TB
+|Larger storage; plan transfer time carefully
+
+|*3*
+|21–50 TB
+|Significant storage; time estimates and throughput planning are important
+
+|*4*
+|> 50 TB
+|Very large storage; requires detailed migration scheduling and throughput benchmarking
+|===
+
+[id="how-to-use-complexity-scores"]
+== How to use complexity scores
+
+Use complexity scores to prioritize and sequence your migration work:
+
+* Start with score-1 VMs to build confidence and validate your target environment before tackling more complex workloads.
+* Review score-3 and score-4 VMs with your application owners early, as they are likely to need design decisions, extra testing, or manual steps that are not visible from inventory alone.
+* A score-0 OS is a signal to verify the guest OS manually before including the VM in any migration batch.
+
+[NOTE]
+====
+Complexity scores are planning inputs, not migration results. They indicate the relative level of effort typically associated with that OS type or disk size, not whether a migration will succeed.
+====
